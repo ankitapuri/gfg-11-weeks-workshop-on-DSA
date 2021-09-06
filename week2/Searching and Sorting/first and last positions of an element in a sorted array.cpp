@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int first_occ(int arr[], int n, int x)
+int first_occ(int arr[], int n, int x)     // T.C. ----> O(log n)
 {
     int start = 0, end=n-1;
     while(start<=end)
@@ -13,7 +13,7 @@ int first_occ(int arr[], int n, int x)
     }
     return -1;
 }
-int last_occ(int arr[], int n, int x)
+int last_occ(int arr[], int n, int x)      // T.C. ----> O(log n)
 {
     int start = 0, end=n-1;
     while(start<=end)
