@@ -14,10 +14,12 @@ public:
     }
     void rotateArr(int arr[],int d, int n)
     {
+	    d=d%n;
         if(d==0) return;
+         reverseArr(arr,0,n-1);
         reverseArr(arr,0,d-1);
         reverseArr(arr,d,n-1);
-        reverseArr(arr,0,n-1);
+       
     }
 
 };
